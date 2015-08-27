@@ -1,4 +1,4 @@
-#Snake.js
+#SnakeGame
 
 A snake game made in vanilla JavaScript.
 
@@ -6,5 +6,3 @@ A snake game made in vanilla JavaScript.
 
 https://markoivanetic.github.io/
 
-###Features
-* Works offline (using service worker)
