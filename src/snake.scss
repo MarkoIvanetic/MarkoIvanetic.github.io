@@ -1,0 +1,49 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body {
+  height: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.board {
+  border: 1px solid rgba(0,0,0,0.2);
+}
+
+.row {
+  display: flex;
+}
+
+.col {
+  padding: 0.5em;
+
+  &.on {
+    background-color: #1de769;
+
+    &:after {
+      .col.on:after {
+        content: "";
+        color: #fff;
+      }
+    }
+
+    &.head {
+      background-color: #e71d36;
+    }
+  }
+
+  &.fruit {
+    background-color: #e7691d;
+    border-radius: 50%;
+    transition: background-color .3s ease-in-out;
+  }
+}
